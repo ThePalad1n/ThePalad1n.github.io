@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: black;
   }
   h1 {
     color: blue;
@@ -7,3 +7,10 @@ body {
   p {
     color: red;
   }
+  h2 {
+    color: orange;
+  }
+  ul {
+    color: whitesmoke
+  }
+
