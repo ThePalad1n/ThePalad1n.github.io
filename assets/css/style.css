@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family:Arial, "Helvetica Neue", Helvetica, sans-serif; 
+    font-family: Georgia, Times, 'Times New Roman', serif; 
     color: #777777;
     background: url("../images/concrete_seamless.png");
     line-height: 34px; 
@@ -155,7 +155,7 @@ nav a:first-child {
     float: right;
   }
   
-  .workpics {
+.workpics {
     margin-bottom: 60px;
     position: relative;
     background-size: 100%;
