@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href= "assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href= "assets/css/style.css">
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <title>Contact | Evan M. Green</title>
+</head>
+  
+<body>
+<header id="maintopheader">
+
+</header>
+	<!-- Navbar Start -->
+	<nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+              <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                      </button>
+              </div><!--/.navbar-header-->
+
+              <div class="collapse navbar-collapse nav-custom" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+                       <li id="nav-link1"><a href="index.html"><h4>about</h4></a></li>
+                       <li id="nav-link2"><a href="portfolio.html"><h4>portfolio</h4></a></li>
+                       <li id="nav-link3"><a class="active" href="contact.html"><h4>contact</h4></a></li>     
+                  </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                       <li id="nav-link4"><a href="https://github.com/thepalad1n"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+                  </ul>
+              </div><!-- /.navbar-collapse -->
+
+        </div><!--/.container-fluid-->
+</nav><!--/.navbar-->
+<!-- Navbar End -->
+
+<!--This is the maincontainer for the contact page-->
+<!--Included here is the contact form which is simply a list-->
+<div id="maincontainer" class="container">   
+    <section class="mainsection">
+        <h1>Contact</h1>
+        <form id="contactform">
+            <ul>
+                <li>
+                    <label for="name">First Name</label>
+                    <input type="text" name="names" id="names" placeholder="Enter your first name" required="required">
+                </li>
+                <li>
+                    <label for="name">Last Name</label>
+                    <input type="text" name="names" id="names" placeholder="Enter your last name" required="required">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="username@email.com" required="required">
+                </li>
+                <li>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required="required"></textarea>
+                </li> 
+            </ul>
+            <input type="submit" name="submit">
+        </form>
+    </section>
+
+<!--This class is the social media connections for the pages-->
+    <section class="sidebar">
+       <div id="connectme">
+           <h2>Connect with Me</h2>
+           <img src="assets/images/github.png" class="sociallinks" alt="GitHub">
+           <img src="assets/images/linkedin.png" class="sociallinks" alt="LinkedIn">
+           <img src="assets/images/stackoverflow.png" class="sociallinks" alt="Stack Overflow">
+        </div> 
+    </section>
+</div>
+
+<!--This the footer at the bottom of the page including the copy right-->
+<footer>
+    <div class="footer">
+        &copy; Copyright 2020 EGreen
+    </div>
+</footer>
+
+</body>
+</html>
