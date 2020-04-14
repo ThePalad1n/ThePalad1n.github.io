@@ -214,35 +214,6 @@ nav a:first-child {
     padding-bottom: 20px;
 }
 
-.eigth{
-    width: 100%;
-    background-color: honeydew;
-    height: 1000px;
-    border: 1px solid #ddd;
-    text-align: center;  
-
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
-    font-size: 12px; 
-    line-height: 49px; 
-    border-bottom: 3px solid white; 
-    padding-bottom: 20px;
-}
-
-.ninth{
-    width: 100%;
-    background-color: rgb(209, 77, 16);
-    height: 1000px;
-    border: 1px solid #ddd;
-    text-align: center;  
-
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
-    font-size: 12px; 
-    line-height: 49px; 
-    border-bottom: 3px solid white; 
-    padding-bottom: 20px;
-}
 .profilepicture {
     width: 200px; 
     height: auto; 
