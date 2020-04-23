@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Porfolio | Evan M. Green</title>
+</head>
+
+<body>
+    <header id="maintopheader"></header>
+    <div class="container" id="head">
+        <a href="pers.html" id="name">Personal Projects</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Upenn</a>
+            <a href="cs.html">Penn State</a>
+            <a href="pers.html">Personal Projects</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center">
+                    <h1><span class="tabdisp"></span> Project One: PI World</h1>
+                    <p>This a networking project I started recently. It includes two raspbery PI(3B+ & 4 both of which
+                        are running on raspberrian OS), and a scrapped PC. Full specs of each will be further
+                        down the page.
+                    </p>
+
+                    <div class="col-md-12">
+                        <div class="jumbotron text-center">
+                            <h2><span class="jumbDisp"></span> DNS Ad Sinkhole</h2>
+                            <p>One of the servers running on the 3B+ is a DNS ad sinkhole known as 'PI-Hole'. Runnning
+                                PI-Hole
+                                on my LAN under a static DHCP which then allows me to set my DNS as Pi-Hole. When a
+                                client
+                                connects to my server, it first makes the DNS request. This request is now sent to my
+                                Pi-hole
+                                instead of the automatically assigned DNS. After this point there are several conditions
+                                that
+                                have to be met inorder for returns.
+                                If it’s a blocked domain sends the request, the returned IP address is 0.0.0.0 and the
+                                request
+                                ends there.
+                                Else (it's not a blocked domain), the DNS request is forwarded to an upstream server,
+                                and
+                                Pi-hole returns the
+                                final response to the client. Then the client connects to the server.
+                                This leaves me with ad free pages on all devices connected to the #B+ DNS on my network.
+                                The
+                                spaces where ads would be are filled with empty space or if video ads they are skipped
+                                completely.
+                                Below is a quick example of the before and after on forbes.com.
+                            </p>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Before</p>
+                                    <video width="320" height="240" controls>
+                                        <source src="assets/videos/before.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>After</p>
+                                    <video width="320" height="240" controls>
+                                        <source src="assets/videos/after.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="jumbotron text-center">
+                                <h2><span class="jumbDisp"></span> OpenVPN </h2>
+                                <p> In addition to the pi-Hole there is also a VPN that is paired with it. There were a
+                                    few
+                                    different ones I wanted to try but OpenVPN was the only one that I came across that
+                                    allowed local DNS. (If i didn't do this there would be a security issue).
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="jumbotron text-center">
+                                <h2><span class="jumbDisp"></span> FTP + PLEX </h2>
+                                <p> Currently there is an FTP server also on the 3B+. This functions pretty well with
+                                    1TB of
+                                    storage. Files on here are then stored on another 1TB drive which is connected to
+                                    the
+                                    PLEX media server. Allowing me or my family to watch and listen to all the media
+                                    uploaded to the FTP.
+
+                                    In the near future this set up will change because its extremely inefficent. Insead
+                                    of
+                                    the FTP I will be making an NAS. I will use the PI4 and the scrapped PC. The Pi4
+                                    will be
+                                    using Samba to share with the PI4. In addition, I will have a RAID-0 set up for the
+                                    previous 2x 1TB SSDs which will leave rougly 2TB of storage. This will add a more
+                                    seamless access of data between machines and even the PLEX server.
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
