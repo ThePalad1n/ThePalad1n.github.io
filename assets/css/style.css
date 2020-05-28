@@ -38,7 +38,7 @@ h1 {
     font-weight: 700; 
     font-size: 15px; 
     line-height: 49px; 
-    border-bottom: 3px solid white; 
+    border-bottom: 3px solid grey; 
     padding-bottom: 20px; 
 }
 
@@ -49,6 +49,7 @@ h2 {
 /* header */
 
 #maintopheader {
+    background-color: grey;  
     width: 100%; 
     z-index: 99;  
     text-decoration: none; 
@@ -56,7 +57,6 @@ h2 {
     border-bottom: 2px solid #ccc;
     margin: 0px 0px 30px;
     position: fixed; 
-    background-color:white; 
 }
 
 #name {
@@ -68,28 +68,30 @@ h2 {
     font-family: Georgia, Times, 'Times New Roman', serif; 
     font-size: 23px; 
     color: black; 
-    background-color: white;  
+    background-color: grey;  
     text-align: center; 
     line-height: 90px; 
 }
 
-nav { 
+nav {
+    color: black; 
+    font-size: 18px; 
+    font-weight: 1000;  
     float: right; 
-    margin-top:25px; 
+    margin-top:25px;
+    background-color: grey;   
 }
 
 nav a {
+    font-weight: 400; 
     text-decoration: none; 
     padding-left: 15px; 
     line-height: 18px; 
     color: black; 
     margin-left: 15px; 
-    border-left: 1px solid white;
-    display: inline-block; 
-}
-
-nav a:first-child {
-    border-left: 0 none;
+    border-left: 1px solid grey;
+    display: inline-block;
+    background-color: grey;    
 }
 
 /* main */
