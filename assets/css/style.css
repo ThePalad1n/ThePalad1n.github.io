@@ -1,15 +1,9 @@
-/*stylesheet1*/
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: Georgia, Times, 'Times New Roman', serif; 
     line-height: 34px; 
     font-size: 18px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.75)),
-    url("https://i.imgur.com/P73IqGp.png");
+    url("https://unsplash.com/photos/twukN12EN7c/download");
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -25,21 +19,8 @@ body {
     width: 100%;
     max-width: 960px;
     clear: both;
-}  
-
-h1, h2, h3, p {
-    margin-bottom: 20px;
-}
-
-p:last-child {
-    margin-bottom:0; 
-}
-
-h1, h2 {
-    font-family: Georgia, Times,'Times New Roman' serif;
-    font-weight: 700; 
     color: rgb(255, 255, 255); 
-}
+}  
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif; 
@@ -47,13 +28,18 @@ h1 {
     font-size: 30px; 
     line-height: 49px; 
     border-bottom: 3px solid rgb(255, 255, 255); 
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);  
 }
-
 h2 {
-    font-size: 24px; 
+    font-size: 24px;
+    color: rgb(255, 255, 255);  
 }
 
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 20px; 
+}
 /* header */
 
 #maintopheader {
@@ -64,9 +50,8 @@ h2 {
     border-bottom: 2px solid rgb(255, 255, 255);
     margin: 0px 0px 30px;
     position: fixed;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(61, 61, 61);
 }
-
 #name {
     text-decoration: none; 
     float: left; 
@@ -80,12 +65,10 @@ h2 {
     text-align: center; 
     line-height: 90px; 
 }
-
 nav { 
     float: right; 
     margin-top:25px; 
 }
-
 nav a {
     text-decoration: none; 
     font-weight: 400; 
@@ -97,16 +80,12 @@ nav a {
     display: inline-block; 
 }
 
-nav a:first-child {
-    border-left: 0 none;
-}
+
 
 /* main */
-
 #maincontainer {
     padding-top:130px; 
 }
-
 .mainsection {
     float: left;
     width: 100%;
@@ -118,120 +97,99 @@ nav a:first-child {
 }
 
 
+
+
 .sb{
     width: 100%;
-    background-color: orange;
     height: 1000px;
-    border: 1px solid #ddd;
+    border: 2px solid orange;
     text-align: center;
 
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
     font-size: 12px; 
-    line-height: 49px; 
-    border-bottom: 3px solid white; 
+    line-height: 49px;
+    padding-top: 20px;  
     padding-bottom: 20px;
 }
 
 .train{
     width: 100%;
-    background-color: mediumturquoise;
     height: 1000px;
-    border: 1px solid #ddd;
+    border: 2px solid turquoise;
     text-align: center; 
     
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
     font-size: 12px; 
-    line-height: 49px; 
-    border-bottom: 3px solid white; 
+    line-height: 49px;
+    padding-top: 20px;   
     padding-bottom: 20px;
 }
 
 .third{
     width: 100%;
-    background-color: forestgreen;
     height: 1000px;
-    border: 1px solid #ddd;
+    border: 2px solid forestgreen;
     text-align: center;  
 
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
     font-size: 12px; 
     line-height: 49px; 
-    border-bottom: 3px solid white; 
+    padding-top: 20px;  
     padding-bottom: 20px;
 }
 
 .fourth{
     width: 100%;
-    background-color: royalblue;
     height: 1000px;
-    border: 1px solid #ddd;
+    border: 2px solid royalblue;
     text-align: center;  
 
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
     font-size: 12px; 
     line-height: 49px; 
-    border-bottom: 3px solid white; 
+    padding-top: 20px;  
     padding-bottom: 20px;
 }
 
 .fifth{
     width: 100%;
-    background-color: salmon;
     height: 1000px;
-    border: 1px solid #ddd;
+    border: 2px solid salmon;
     text-align: center; 
     
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
     font-size: 12px; 
     line-height: 49px; 
-    border-bottom: 3px solid white; 
+    padding-top: 20px;  
     padding-bottom: 20px;
 }
 
 .sixth{
     width: 100%;
-    background-color: slategray;
     height: 1000px;
-    border: 1px solid #ddd;
+    border: 2px solid slategray;
     text-align: center;  
 
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
     font-size: 12px; 
     line-height: 49px; 
-    border-bottom: 3px solid white; 
+    padding-top: 20px;  
     padding-bottom: 20px;
 }
 
 .seventh{
     width: 100%;
-    background-color: khaki;
     height: 1000px;
-    border: 1px solid #ddd;
+    border: 2px solid khaki;
     text-align: center;  
 
     font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 700; 
     font-size: 12px; 
-    line-height: 49px; 
-    border-bottom: 3px solid white; 
+    line-height: 49px;
+    padding-top: 20px; 
     padding-bottom: 20px;
 }
 
-.profilepicture {
-    width: 200px; 
-    height: auto; 
-    float: left; 
-    margin-top: 10px; 
-    margin-right: 25px; 
-}
-
-/* sidebar */
 
 
 .sidebar {
@@ -242,35 +200,11 @@ nav a:first-child {
     float: right; 
     margin-bottom: 20px; 
 }
-
- h2 {
-    border-bottom: 2px solid #eee; 
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    padding-bottom: 20px; 
-    margin-bottom: 15px; 
-    line-height: 22px;
-    text-align: center; 
-}
-
 .sociallinks {
     width: 65px; 
     height: 65px; 
     margin-top: 8px; 
 }
-
-.sociallinks:last-child {
-    margin-right: 0; 
-}
-
-/* Portfolio Section */
-
-.leftpicture {
-    float: left;
-  }
-  
-.rightpicture {
-    float: right;
-  }
 
 /* footer */
 .footer {
@@ -282,44 +216,3 @@ nav a:first-child {
     background: none;
     height: 50px;
   }
-
-  /* contact page */
-
-#contactform ul {
-    margin-bottom: 20px; 
-}
-
-#contactform li {
-    margin-bottom: 10px;
-}
-
-label, 
-input[type=text],
-input[type=email],
-textarea {
-    display: block; 
-    width: 100%; 
-}
-
-input[type=text],
-input[type=email],
-textarea {
-    height: 35px; 
-    border: 1px solid #ddd; 
-    padding: 0 10px; 
-    font-size: 15px;  
-}
-
-input[type=submit] {
-    background-color: grey; 
-    font-size: 18px; 
-    color: white; 
-    border: 0 none; 
-    padding: 30px 30px; 
-    cursor: pointer; 
-}
-
-textarea {
-    text-align: center;
-    height: 200px; 
-}
