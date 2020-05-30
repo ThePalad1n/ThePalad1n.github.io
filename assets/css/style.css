@@ -6,16 +6,24 @@
 
 body {
     font-family: Georgia, Times, 'Times New Roman', serif; 
-    color: black;
-    background-color: grey;
     line-height: 34px; 
-    font-size: 18px;  
+    font-size: 18px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.75)),
+    url("https://i.imgur.com/P73IqGp.png");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    color: rgb(255, 255, 255) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    content: '';
+  
 }
 
 .container {
     width: 100%;
     max-width: 960px;
-    margin: auto; 
     clear: both;
 }  
 
@@ -30,33 +38,33 @@ p:last-child {
 h1, h2 {
     font-family: Georgia, Times,'Times New Roman' serif;
     font-weight: 700; 
-    color: black; 
+    color: rgb(255, 255, 255); 
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif; 
     font-weight: 700; 
-    font-size: 15px; 
+    font-size: 30px; 
     line-height: 49px; 
-    border-bottom: 3px solid grey; 
+    border-bottom: 3px solid rgb(255, 255, 255); 
     padding-bottom: 20px; 
 }
 
 h2 {
-    font-size: 22px; 
+    font-size: 24px; 
 }
 
 /* header */
 
 #maintopheader {
-    background-color: grey;  
     width: 100%; 
     z-index: 99;  
-    text-decoration: none; 
+    text-decoration: none;
     overflow: auto; 
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid rgb(255, 255, 255);
     margin: 0px 0px 30px;
-    position: fixed; 
+    position: fixed;
+    background-color: rgb(0, 0, 0);
 }
 
 #name {
@@ -67,31 +75,30 @@ h2 {
     font-weight: 700; 
     font-family: Georgia, Times, 'Times New Roman', serif; 
     font-size: 23px; 
-    color: black; 
-    background-color: grey;  
+    color: white; 
+    background-color: none;  
     text-align: center; 
     line-height: 90px; 
 }
 
-nav {
-    color: black; 
-    font-size: 18px; 
-    font-weight: 1000;  
+nav { 
     float: right; 
-    margin-top:25px;
-    background-color: grey;   
+    margin-top:25px; 
 }
 
 nav a {
-    font-weight: 400; 
     text-decoration: none; 
-    padding-left: 15px; 
+    font-weight: 400; 
+    padding-left: 10px; 
     line-height: 18px; 
-    color: black; 
-    margin-left: 15px; 
-    border-left: 1px solid grey;
-    display: inline-block;
-    background-color: grey;    
+    color: white; 
+    margin-left: 10px; 
+    border-left: 1px solid white;
+    display: inline-block; 
+}
+
+nav a:first-child {
+    border-left: 0 none;
 }
 
 /* main */
@@ -106,7 +113,7 @@ nav a {
     max-width: 650px;
     padding: 30px;
     margin: 0 0 40px;
-    background-color: grey; 
+    background-color: none; 
     border: 1px solid #ddd;
 }
 
@@ -226,29 +233,29 @@ nav a {
 
 /* sidebar */
 
+
 .sidebar {
-    background-color: grey;
+    background-color: none;
     padding: 30px; 
     width: 100%; 
     max-width: 270px; 
     float: right; 
-    border: 1px solid #ddd; 
     margin-bottom: 20px; 
 }
 
- .sidebar, h2 {
+ h2 {
     border-bottom: 2px solid #eee; 
     font-family: Georgia, 'Times New Roman', Times, serif; 
     padding-bottom: 20px; 
     margin-bottom: 15px; 
-    line-height: 22px; 
+    line-height: 22px;
+    text-align: center; 
 }
 
 .sociallinks {
-    width: 62px; 
-    height: 62px; 
+    width: 65px; 
+    height: 65px; 
     margin-top: 8px; 
-    margin-right: 5px; 
 }
 
 .sociallinks:last-child {
@@ -264,31 +271,6 @@ nav a {
 .rightpicture {
     float: right;
   }
-  
-.workpics {
-    margin-bottom: 60px;
-    position: relative;
-    background-size: 100%;
-  }
-
- .picture {
-    width: 260px; 
-    height:210px; 
-    border: 0 none;
-    opacity: 0.8;
-}
- 
-.caption {
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    text-align: center;
-    color: black;
-    background-color: grey;
-    line-height: 45px;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    margin-bottom: 13px;   
-}
 
 /* footer */
 .footer {
@@ -297,9 +279,47 @@ nav a {
     font-size: 12px;
     color: black;
     text-align: center;
-    background: grey;
-    border-top: 8px solid  white;
+    background: none;
     height: 50px;
   }
 
+  /* contact page */
 
+#contactform ul {
+    margin-bottom: 20px; 
+}
+
+#contactform li {
+    margin-bottom: 10px;
+}
+
+label, 
+input[type=text],
+input[type=email],
+textarea {
+    display: block; 
+    width: 100%; 
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px; 
+    border: 1px solid #ddd; 
+    padding: 0 10px; 
+    font-size: 15px;  
+}
+
+input[type=submit] {
+    background-color: grey; 
+    font-size: 18px; 
+    color: white; 
+    border: 0 none; 
+    padding: 30px 30px; 
+    cursor: pointer; 
+}
+
+textarea {
+    text-align: center;
+    height: 200px; 
+}
